@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/JulioIntriago/services-web/static/css/main.f54fbbc7.css",
+    "main.js": "/JulioIntriago/services-web/static/js/main.8fee5e0c.js",
+    "static/js/453.e26ba3fe.chunk.js": "/JulioIntriago/services-web/static/js/453.e26ba3fe.chunk.js",
+    "static/media/about-image.jpg": "/JulioIntriago/services-web/static/media/about-image.b5f555cd8f64f742da71.jpg",
+    "static/media/Hail.png": "/JulioIntriago/services-web/static/media/Hail.a69766af7678dae35cb3.png",
+    "static/media/Hurricane.png": "/JulioIntriago/services-web/static/media/Hurricane.d6d1e8101b14f36aa83f.png",
+    "static/media/Flood.png": "/JulioIntriago/services-web/static/media/Flood.875e4674619ac80c8b2f.png",
+    "static/media/Fire.png": "/JulioIntriago/services-web/static/media/Fire.796ab66cf62b9571eb63.png",
+    "static/media/Water.png": "/JulioIntriago/services-web/static/media/Water.5b17ed4438a03cc1bc86.png",
+    "static/media/Electrical.png": "/JulioIntriago/services-web/static/media/Electrical.bbf70472791e5ae6a9f0.png",
+    "index.html": "/JulioIntriago/services-web/index.html",
+    "main.f54fbbc7.css.map": "/JulioIntriago/services-web/static/css/main.f54fbbc7.css.map",
+    "main.8fee5e0c.js.map": "/JulioIntriago/services-web/static/js/main.8fee5e0c.js.map",
+    "453.e26ba3fe.chunk.js.map": "/JulioIntriago/services-web/static/js/453.e26ba3fe.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f54fbbc7.css",
+    "static/js/main.8fee5e0c.js"
+  ]
+}
