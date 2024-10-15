@@ -1,0 +1,125 @@
+.claim-types {
+    padding: 40px;
+    background-color: #f9f9f9;
+  }
+  
+  .claim-types-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .claim-types-header h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+  }
+  
+  .claim-types-header p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .claim-types-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .claim-types-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .claim-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .claim-card h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-top: 10px;
+  }
+  
+  .claim-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .icon {
+    width: 40px;
+    height: auto;
+  }
+  
+  .claim-types-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  
+  .claim-image {
+    position: relative;
+  }
+  
+  .claim-image img {
+    width: 100%;
+    border-radius: 10px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .claim-image h3 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  /* Estilos para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .claim-types-content {
+      grid-template-columns: 1fr;
+    }
+  
+    .claim-types-right {
+      grid-template-columns: 1fr;
+    }
+  
+    .claim-image img {
+      height: 150px;
+    }
+  }
+  
+  .custom-button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  .custom-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .claim-types-button {
+    text-align: center;
+    margin-top: 40px;
+  }
+  

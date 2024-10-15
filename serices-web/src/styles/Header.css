@@ -1,0 +1,82 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.logo {
+  height: 50px;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Enlaces de navegación */
+.navigation a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #070707;
+}
+
+/* Botón Start Now visible solo en pantallas grandes */
+.start-now {
+  background-color: #1f60a5f8;
+  color: #fff;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  display: block;
+}
+
+/* Ícono de menú hamburguesa */
+.hamburger-icon {
+  display: none; /* Se muestra solo en pantallas pequeñas */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.hamburger-icon .line {
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  /* Ocultar el botón Start Now en móviles */
+  .start-now {
+    display: none;
+  }
+
+  /* Ocultar la navegación por defecto */
+  .navigation {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* Mostrar navegación cuando el menú está abierto */
+  .navigation.open {
+    display: flex;
+  }
+
+  /* Mostrar ícono de menú hamburguesa en pantallas pequeñas */
+  .hamburger-icon {
+    display: flex;
+  }
+}
