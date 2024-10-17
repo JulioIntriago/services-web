@@ -1,137 +1,148 @@
+/* Estilos para el Banner */
 .banner {
-    display: flex;
-    justify-content: flex-start; /* Alinea el contenido a la izquierda */
-    align-items: center;
-    height: 80vh;
-    background: linear-gradient(135deg, #900c3f, #007bff);
-    color: white;
-    padding: 20px;
-    text-align: left; /* Alinea el texto a la izquierda */
-  }
-  
-  .banner-content {
-    max-width: 800px; /* Limita el ancho máximo del contenido */
-    width: 100%;
-  }
-  
-  .banner h1 {
-    font-size: 3.5rem; /* Ajusta el tamaño del título */
-    margin-bottom: 20px; /* Añade un margen inferior para el espaciado */
-    font-weight: bold; /* Hace que el texto del título sea más prominente */
-  }
-  
-  .banner p {
-    font-size: 2rem; /* Ajusta el tamaño del párrafo */
-    margin-bottom: 30px; /* Añade un margen inferior para espaciado con el botón */
-    font-weight: 300; /* Hace que el texto sea más ligero para mejorar la lectura */
-  }
-  
-  .custom-button {
-    background-color: #ff0066;
-    color: white;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    border: none;
-    cursor: pointer;
-    text-transform: uppercase; /* Transforma el texto del botón a mayúsculas */
-    font-weight: bold;
-  }
-  
-  .custom-button:hover {
-    background-color: #cc0052; /* Cambia el color en hover para dar un efecto */
-  }
-  
-  /* Estilos para pantallas pequeñas */
-  @media (max-width: 768px) {
-    .banner {
-      padding: 10px;
-      height: auto; /* Ajusta la altura para pantallas pequeñas */
-    }
-  
-    .banner-content {
-      max-width: 100%;
-    }
-  
-    .banner h1 {
-      font-size: 2.5rem; /* Reduce el tamaño del título en pantallas pequeñas */
-    }
-  
-    .banner p {
-      font-size: 1.2rem; /* Reduce el tamaño del párrafo en pantallas pequeñas */
-    }
-  
-    .custom-button {
-      width: 100%; /* Hace que el botón ocupe el ancho completo en pantallas pequeñas */
-      padding: 15px;
-      font-size: 1.2rem;
-    }
-  }
+  display: flex;
+  justify-content: flex-start; /* Alinear el contenido a la izquierda */
+  align-items: center;
+  min-height: 110vh; /* Hacer que el banner ocupe al menos toda la altura de la pantalla */
+  background: linear-gradient(135deg, #900c3f, #007bff);
+  color: white;
+  padding: 30px 30px; /* Aumentar el padding para darle más espacio */
+  text-align: left;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.banner-content {
+  max-width: 700px; /* Reducir el ancho máximo del contenido */
+  width: 100%;
+}
+
+/* Ajustes del título y subtítulo */
+.banner h1 {
+  font-size: 3.5rem; /* Aumentar ligeramente el tamaño del título */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.banner h4 {
+  font-size: 1.8rem; /* Aumentar el tamaño del subtítulo */
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+/* Botón personalizado */
+.custom-button {
+  background-color: #1f60a5;
+  color: white;
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.custom-button:hover {
+  background-color: #155a8a;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
   .banner {
-    display: flex;
-    justify-content: flex-start; /* Alinea el contenido a la izquierda */
-    align-items: center;
-    height: 80vh;
-    background: linear-gradient(135deg, #900c3f, #007bff);
-    color: white;
-    padding: 20px;
-    text-align: left; /* Alinea el texto a la izquierda */
+    padding: 80px;
+    min-height: auto; /* Ajustar la altura automáticamente */
+    text-align: center; /* Centrar el contenido para pantallas pequeñas */
+    justify-content: center; /* Centrar el contenido */
   }
-  
+
   .banner-content {
-    max-width: 800px; /* Limita el ancho máximo del contenido */
-    width: 100%;
+    max-width: 100%; /* Ocupa el ancho completo */
   }
-  
+
   .banner h1 {
-    font-size: 3.5rem; /* Ajusta el tamaño del título */
-    margin-bottom: 20px; /* Añade un margen inferior para el espaciado */
-    font-weight: bold; /* Hace que el texto del título sea más prominente */
+    font-size: 2.5rem; /* Reducir el tamaño del título en pantallas pequeñas */
+    line-height: 1.2; /* Ajustar el interlineado para mejorar la legibilidad */
   }
-  
-  .banner p {
-    font-size: 1.5rem; /* Ajusta el tamaño del párrafo */
-    margin-bottom: 30px; /* Añade un margen inferior para espaciado con el botón */
-    font-weight: 300; /* Hace que el texto sea más ligero para mejorar la lectura */
+
+  .banner h4 {
+    font-size: 1.3rem; /* Reducir el tamaño del subtítulo */
+    line-height: 1.5; /* Ajustar el interlineado */
   }
-  
+
   .custom-button {
-    background-color: #ff0066;
-    color: white;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    border: none;
-    cursor: pointer;
-    text-transform: uppercase; /* Transforma el texto del botón a mayúsculas */
-    font-weight: bold;
+    width: 100%; /* Ocupa el ancho completo en pantallas pequeñas */
+    padding: 15px;
+    font-size: 1rem;
   }
-  
-  .custom-button:hover {
-    background-color: #cc0052; /* Cambia el color en hover para dar un efecto */
+}
+
+/* Ajuste del Header */
+.header {
+  position: fixed;
+  top: 50px; /* Ajustar según la altura de la barra de contacto */
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  transition: top 0.3s ease-in-out;
+}
+
+/* Mejora del botón "Start Now" */
+.start-now {
+  background-color: #1f60a5;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.start-now:hover {
+  background-color: #155a8a;
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+  .contact-bar {
+    display: none; /* Ocultar la barra de contacto en dispositivos pequeños */
   }
-  
-  /* Estilos para pantallas pequeñas */
-  @media (max-width: 768px) {
-    .banner {
-      padding: 10px;
-      height: auto; /* Ajusta la altura para pantallas pequeñas */
-    }
-  
-    .banner-content {
-      max-width: 100%;
-    }
-  
-    .banner h1 {
-      font-size: 2.5rem; /* Reduce el tamaño del título en pantallas pequeñas */
-    }
-  
-    .banner p {
-      font-size: 1.2rem; /* Reduce el tamaño del párrafo en pantallas pequeñas */
-    }
-  
-    .custom-button {
-      width: 100%; /* Hace que el botón ocupe el ancho completo en pantallas pequeñas */
-      padding: 15px;
-      font-size: 1.2rem;
-    }
+
+  .header {
+    top: 0; /* Ajuste del header cuando la barra de contacto no está presente */
+    padding: 10px 20px;
   }
-    
+
+  .start-now {
+    display: none; /* Ocultar el botón en pantallas pequeñas */
+  }
+
+  .hamburger-icon {
+    display: flex; /* Mostrar el ícono de menú en pantallas pequeñas */
+  }
+
+  .navigation {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .navigation.open {
+    display: flex; /* Mostrar el menú al estar abierto */
+  }
+}

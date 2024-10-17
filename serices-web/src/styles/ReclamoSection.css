@@ -1,0 +1,47 @@
+/* Sección de reclamo */
+.reclamo-section {
+    background-color: #f0f0f0; /* Fondo suave para contrastar con el texto */
+    padding: 50px 20px; /* Espaciado alrededor del contenido */
+    text-align: center; /* Centrar el contenido */
+  }
+  
+  .reclamo-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .reclamo-content h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #333; /* Texto oscuro para buen contraste */
+    margin-bottom: 20px;
+  }
+  
+  .reclamo-content h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f538b; /* Color acorde a la paleta utilizada */
+    margin-bottom: 15px;
+  }
+  
+  .reclamo-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555; /* Gris oscuro para una lectura más cómoda */
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .reclamo-content h2 {
+      font-size: 1.8rem;
+    }
+  
+    .reclamo-content h4 {
+      font-size: 1.3rem;
+    }
+  
+    .reclamo-content p {
+      font-size: 1rem;
+    }
+  }
+  
